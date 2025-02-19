@@ -141,7 +141,7 @@ elf = 'build/main.elf'
 
 ## 🎥 Imagens do Projeto
 
-Link para o video no youtube: https://youtu.be/gyQtWC9HXsI
+Link para o video no youtube: [https://youtu.be/gyQtWC9HXsI](https://youtu.be/zKhDo0u8M50)
 
 ---
 
