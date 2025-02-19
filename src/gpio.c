@@ -1,5 +1,5 @@
 #include "gpio.h"
-#include "pico/bootrom.h" // Incluir o cabeçalho necessário
+#include "pico/bootrom.h"
 
 volatile bool red_on = false;
 volatile bool blue_on = false;
@@ -15,7 +15,7 @@ void gpio_irq_handler(uint gpio, uint32_t event_mask) {
     if (current_time - last_time > 200000) {
         if (!gpio_get(BUTTON_BOOTSEL)) {
             last_time = current_time;
-            reset_usb_boot(0, 0); // Verifique a chamada desta função
+            reset_usb_boot(0, 0);
         }
         if (!gpio_get(BUTTON_JOYSTICK)) {
             gpio_put(LED_GREEN, !gpio_get(LED_GREEN));
